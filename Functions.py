@@ -302,14 +302,12 @@ Por favor, Escolha uma opção:
                     while True:
                         print("Por favor, escolha a fala do cantor que é exibida na música que deseja alterar:")
                         for falas in copia_falas_do_cantor.keys():
-                            if falas > 2:
-                                print(f'{falas-2}. {copia_falas_do_cantor[falas]}')
+                            print(f'{falas}. {copia_falas_do_cantor[falas]}')
                         print("0. Retornar ao menu anterior")
                         escolha = int(input())
-                        escolha += 2
-                        if escolha == 2:
+                        if escolha == 0:
                             break
-                        elif escolha in range(3, len(copia_falas_do_cantor)+1):
+                        elif escolha in range(1, len(copia_falas_do_cantor)+1):
                             nova_fala = input("Digite a nova fala do cantor que será exibida: ")
                             copia_falas_do_cantor[escolha] = nova_fala
                             break
