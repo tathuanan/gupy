@@ -1,7 +1,6 @@
 ######################## OBSERVAÇÕES ########################
 # Variáveis x e xx são variáveis de controle do loop while ##
 #############################################################
-from time import sleep
 from datetime import date
 
 VARIAVEIS = __import__('Main')
